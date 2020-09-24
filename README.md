@@ -1,1 +1,11 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+<p align="center"> 
+    <h1 align="center"> 
+        Note_book
+    </h1>
+</p>
+
+This is a sample notebook.
+
+---
+
+## In development...
