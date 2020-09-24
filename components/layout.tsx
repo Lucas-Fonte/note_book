@@ -1,17 +1,26 @@
-import Head from 'next/head';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
+import Head from 'next/head'
+import styles from './layout.module.css'
+import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
 
-const name = 'Note_book';
-export const siteTitle = 'Note_book';
+const name = '[Your Name]'
+export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home
+}: {
+  children: React.ReactNode
+  home?: boolean
+}) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="This is my college notebook" />
+        <meta
+          name="description"
+          content="Learn how to build a personal website using Next.js"
+        />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -59,5 +68,6 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  );
+  )
 }
+© 2020 GitHub, Inc.
